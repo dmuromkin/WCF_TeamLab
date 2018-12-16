@@ -13,7 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
-using WcfCalculationLib;
+using Graphics.CalcService;
+//using WcfCalculationLib;
 using System.Timers;
 
 namespace Graphics {
@@ -55,8 +56,8 @@ namespace Graphics {
                 for (int j = 0; j < n; j++) {
                     rects[i, j].Width = 4;
                     rects[i, j].Height = 4;
-                    Canvas.SetLeft(rects[i, j], i * 4);
-                    Canvas.SetTop(rects[i, j], j * 4);
+                    Canvas.SetLeft(rects[i, j], i * 10);
+                    Canvas.SetTop(rects[i, j], j * 10);
                     Canva.Children.Add(rects[i, j]);
                 }
             }
@@ -95,7 +96,7 @@ namespace Graphics {
 
             return mArray;
         }
-        const int n = 75;
+        const int n = 20;
         public Rectangle[,] rects = new Rectangle[n, n];
 
 
@@ -117,7 +118,8 @@ namespace Graphics {
             for (int i = 0; i < n; i++) //top
                 u[i, 0] = Convert.ToInt32(top.Text);
 
-            CalcService calcservice = new CalcService();
+            //CalcService calcservice = new CalcService();
+            CalcServiceClient calcservice = new CalcServiceClient();
             InputDate inputdate = new InputDate();
             OutputDate outputDate = new OutputDate();
             inputdate.H = h;
@@ -126,6 +128,7 @@ namespace Graphics {
 
             inputdate.Mass_u = ToJagged(u);
 
+            //outputDate = calcservice.CulcTeploPosl(inputdate);
             outputDate = calcservice.CulcTeploPosl(inputdate);
 
             u = ToMultiD(outputDate.Culc_Teplo);

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8c05bf02-c613-41d3-89d1-5f73fa251444" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/WCF_Calc/Service1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="0dfa5cf6-04d1-474e-99d6-feb4d63e2308" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?disco" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="86010c92-2dff-4f24-83a2-a6229a214fa4" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service11.xsd" MetadataType="Schema" ID="d1575094-28f8-487e-896d-5945a9da0d76" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service12.xsd" MetadataType="Schema" ID="f7807158-0c18-4a90-b15b-2057e6ee4f24" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service13.xsd" MetadataType="Schema" ID="be492f4e-feee-4365-9cdb-8d0a1df2ae39" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?xsd=xsd3" />
+    <MetadataFile FileName="CalcService.wsdl" MetadataType="Wsdl" ID="2b5d7ab8-2855-4dce-bb3e-ac54b5be8060" SourceId="1" SourceUrl="http://acer/WCF_Calc/Service1.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
